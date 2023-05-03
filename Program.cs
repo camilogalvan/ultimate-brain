@@ -1,7 +1,13 @@
+using Microsoft.EntityFrameworkCore;
+using UltimateBrain.Models;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddDbContext<UltimateBrainContext>(options =>
+options.UseSqlServer(builder.Configuration.GetConnectionString("conexion")));
 
 var app = builder.Build();
 

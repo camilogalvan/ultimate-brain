@@ -1,0 +1,46 @@
+﻿@model PreguntaViewModel
+
+<div>
+    Tiempo restante: <span id="tiempoRestante">@Model.TiempoRestante</span> segundos
+</div>
+
+<h5>@Model.participante.NickName : id= @Model.participante.Id</h5>
+
+<h2>@Model.Pregunta.TextoPregunta</h2>
+
+@using (Html.BeginForm("ValidarRespuesta", "Preguntums", FormMethod.Post))
+{
+    <ul>
+        @for (int i = 0; i < Model.Opciones.Count; i++)
+        {
+            <li>
+                <label>
+                    @Html.RadioButton("respuestaId", Model.Opciones[i].Id) @Model.Opciones[i].TextoRespuesta
+                </label>
+            </li>
+        }
+    </ul>
+
+    @Html.Hidden("participanteId", Model.participante.Id)
+
+    <button type="submit">Responder</button>
+}
+
+<script>
+    var tiempoRestante = @Model.TiempoRestante;
+
+    var interval = setInterval(function () {
+        tiempoRestante--;
+        document.getElementById("tiempoRestante").innerText = tiempoRestante;
+
+        if (tiempoRestante == 0) {
+            clearInterval(interval);
+            document.getElementById("tiempoRestante").innerText = "Tiempo agotado";
+            terminarPartida();
+        }
+    }, 1000);
+
+    function terminarPartida() {
+        window.location.href = '@Url.Action("TerminarPartida", "Juego")';
+    }
+</script>
