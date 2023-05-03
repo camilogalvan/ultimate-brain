@@ -1,0 +1,14 @@
+﻿@model Participante
+
+@using (Html.BeginForm("registrarParticipante", "Participantes", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.NickName, htmlAttributes: new { @class = "control-label" })
+        @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
+        @Html.ValidationMessageFor(model => model.NickName, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Registrarse</button>
+}
