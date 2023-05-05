@@ -1,0 +1,65 @@
+﻿.contenedor-titulo{
+    display: grid;
+    place-items: center;
+}
+
+.titulo-participante {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+    color: #009879;
+}
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 16px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+.content-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: bold;
+}
+.content-table th, 
+content-table td{
+    padding: 12px 15px;
+    align-content:center;
+}
+.content-table tbody tr{
+    border-bottom: 1px solid #dddddd;
+
+}
+.content-table tbody tr:nth-of-type(even) {
+    border-color: #dddddd;
+}
+
+.content-table tbody tr:last-of-type{
+    border-bottom: 2px solid #009879;
+}
+
+.display-4 {
+    font-family: 'Quicksand', sans-serif;
+    color: #009879;
+}
+.boton-registro {
+    font-family: 'Quicksand', sans-serif;
+    margin-top: 10px;
+    background-color: #04BF9D; /* Green */
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 13px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+}
+
+    .boton-registro:hover {
+        background-color: #009879; /* Green */
+        color: white;
+    }

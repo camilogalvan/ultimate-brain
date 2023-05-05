@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\fenix\\source\\repos\\ultimate-brain\\UltimateBrain.csproj": {}
+    "C:\\Users\\Camila\\Desktop\\ultimate-brain\\UltimateBrain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\fenix\\source\\repos\\ultimate-brain\\UltimateBrain.csproj": {
+    "C:\\Users\\Camila\\Desktop\\ultimate-brain\\UltimateBrain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\fenix\\source\\repos\\ultimate-brain\\UltimateBrain.csproj",
+        "projectUniqueName": "C:\\Users\\Camila\\Desktop\\ultimate-brain\\UltimateBrain.csproj",
         "projectName": "UltimateBrain",
-        "projectPath": "C:\\Users\\fenix\\source\\repos\\ultimate-brain\\UltimateBrain.csproj",
-        "packagesPath": "C:\\Users\\fenix\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\fenix\\source\\repos\\ultimate-brain\\obj\\",
+        "projectPath": "C:\\Users\\Camila\\Desktop\\ultimate-brain\\UltimateBrain.csproj",
+        "packagesPath": "C:\\Users\\Camila\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Camila\\Desktop\\ultimate-brain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\fenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Camila\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -53,6 +53,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[6.0.13, )"
+            },
+            "bootstrap": {
+              "target": "Package",
+              "version": "[5.2.3, )"
             }
           },
           "imports": [
@@ -61,8 +65,7 @@
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -74,7 +77,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
         }
       }
     }

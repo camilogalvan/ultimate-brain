@@ -1,14 +1,19 @@
 ﻿@model Participante
 
+
+
+<h1 class="display-4">Dinos tu Nickname</h1>
+
 @using (Html.BeginForm("registrarParticipante", "Participantes", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
 
     <div class="form-group">
-        @Html.LabelFor(model => model.NickName, htmlAttributes: new { @class = "control-label" })
-        @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
+        <div class="col-6">
+            @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
+        </div>
         @Html.ValidationMessageFor(model => model.NickName, "", new { @class = "text-danger" })
     </div>
 
-    <button type="submit" class="btn btn-primary">Registrarse</button>
+    <button type="submit" class="boton-registro">Registrarse</button>
 }
