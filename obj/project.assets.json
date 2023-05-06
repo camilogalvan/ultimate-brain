@@ -10835,24 +10835,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jarlin\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Camila\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jarlin\\source\\repos\\ultimate-brain\\UltimateBrain.csproj",
+      "projectUniqueName": "C:\\Users\\Camila\\Desktop\\ultimate-brain\\UltimateBrain.csproj",
       "projectName": "UltimateBrain",
-      "projectPath": "C:\\Users\\Jarlin\\source\\repos\\ultimate-brain\\UltimateBrain.csproj",
-      "packagesPath": "C:\\Users\\Jarlin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jarlin\\source\\repos\\ultimate-brain\\obj\\",
+      "projectPath": "C:\\Users\\Camila\\Desktop\\ultimate-brain\\UltimateBrain.csproj",
+      "packagesPath": "C:\\Users\\Camila\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Camila\\Desktop\\ultimate-brain\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Jarlin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Camila\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -10903,8 +10898,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -10916,7 +10910,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.311\\RuntimeIdentifierGraph.json"
       }
     }
   }

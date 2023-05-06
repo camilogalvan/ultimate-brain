@@ -9,7 +9,7 @@
                 <div class="card">
 
                     <div class="card-header  border-info">
-                        <h2 class=""><b>Juego</b> </h2>
+                        <h2 class=".titulo-inicio" style="color:#dc3545"><b>Juego</b> </h2>
 
                     </div>
                     <!-- /.card-header -->
@@ -19,9 +19,7 @@
                             Tiempo restante: <span id="tiempoRestante">@Model.TiempoRestante</span> segundos
                         </div>
 
-                        <h5>@Model.participante.NickName : id= @Model.participante.Id</h5>
-
-                        <h2>@Model.Pregunta.TextoPregunta</h2>
+                        <h2 class="titulo-inicio">@Model.Pregunta.TextoPregunta</h2>
 
                         @using (Html.BeginForm("ValidarRespuesta", "Preguntums", FormMethod.Post))
                         {
@@ -29,7 +27,7 @@
                                 @for (int i = 0; i < Model.Opciones.Count; i++)
                                 {
                                     <li>
-                                        <label>
+                                        <label class="titulo-inicio">
                                             @Html.RadioButton("respuestaId", Model.Opciones[i].Id) @Model.Opciones[i].TextoRespuesta
                                         </label>
                                     </li>
@@ -38,7 +36,7 @@
 
                             @Html.Hidden("participanteId", Model.participante.Id)
 
-                            <button type="submit">Responder</button>
+                            <button type="submit" class="boton-registro">Responder</button>
                         }
 
                         <script>

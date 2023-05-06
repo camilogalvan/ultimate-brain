@@ -50,9 +50,9 @@ content-table td{
     margin-top: 10px;
     background-color: #dc3545; /* RED */
     border: none;
-    border-radius: 15px;
+    border-radius: 12px;
     color: white;
-    padding: 13px 32px;
+    padding: 10px 22px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

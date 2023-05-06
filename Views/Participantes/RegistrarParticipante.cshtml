@@ -9,7 +9,7 @@
                 <div class="card">
 
                     <div class="card-header  border-info">
-                        <h2 class=""><b>Registro</b> </h2>
+                        <h2 class="titulo-inicio"><b>Registro</b> </h2>
 
                     </div>
                     <!-- /.card-header -->
@@ -21,7 +21,7 @@
                             @Html.AntiForgeryToken()
 
                             <div class="form-group">
-                                <div class="col-6">
+                                <div class="col-3">
                                     @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
                                 </div>
                                 @Html.ValidationMessageFor(model => model.NickName, "", new { @class = "text-danger" })
