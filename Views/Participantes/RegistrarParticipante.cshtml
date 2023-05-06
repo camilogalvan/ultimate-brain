@@ -1,19 +1,49 @@
 ﻿@model Participante
 
 
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
 
-<h1 class="display-4">Dinos tu Nickname</h1>
+                    <div class="card-header  border-info">
+                        <h2 class=""><b>Registro</b> </h2>
 
-@using (Html.BeginForm("registrarParticipante", "Participantes", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <h1 class="display-4">Dinos tu Nickname</h1>
 
-    <div class="form-group">
-        <div class="col-6">
-            @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
+                        @using (Html.BeginForm("registrarParticipante", "Participantes", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-group">
+                                <div class="col-6">
+                                    @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
+                                </div>
+                                @Html.ValidationMessageFor(model => model.NickName, "", new { @class = "text-danger" })
+                            </div>
+
+                            <button type="submit" class="boton-registro">Registrarse</button>
+                        }
+
+                    </div>
+
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
         </div>
-        @Html.ValidationMessageFor(model => model.NickName, "", new { @class = "text-danger" })
+        <!-- /.row -->
     </div>
+    <!-- /.container-fluid -->
+</section>
 
-    <button type="submit" class="boton-registro">Registrarse</button>
-}
+
+
+
+
+
