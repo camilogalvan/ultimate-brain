@@ -1,14 +1,49 @@
 ﻿@model Participante
 
-@using (Html.BeginForm("registrarParticipante", "Participantes", FormMethod.Post))
-{
-    @Html.AntiForgeryToken()
 
-    <div class="form-group">
-        @Html.LabelFor(model => model.NickName, htmlAttributes: new { @class = "control-label" })
-        @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
-        @Html.ValidationMessageFor(model => model.NickName, "", new { @class = "text-danger" })
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-header  border-info">
+                        <h2 class="titulo-inicio"><b>Registro</b> </h2>
+
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+                        <h1 class="display-4">Dinos tu Nickname</h1>
+
+                        @using (Html.BeginForm("registrarParticipante", "Participantes", FormMethod.Post))
+                        {
+                            @Html.AntiForgeryToken()
+
+                            <div class="form-group">
+                                <div class="col-3">
+                                    @Html.EditorFor(model => model.NickName, new { htmlAttributes = new { @class = "form-control" } })
+                                </div>
+                                @Html.ValidationMessageFor(model => model.NickName, "", new { @class = "text-danger" })
+                            </div>
+
+                            <button type="submit" class="boton-registro">Registrarse</button>
+                        }
+
+                    </div>
+
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
     </div>
+    <!-- /.container-fluid -->
+</section>
 
-    <button type="submit" class="btn btn-primary">Registrarse</button>
-}
+
+
+
+
+

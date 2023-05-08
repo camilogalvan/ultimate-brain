@@ -1,46 +1,72 @@
 ﻿@model PreguntaViewModel
 
-<div>
-    Tiempo restante: <span id="tiempoRestante">@Model.TiempoRestante</span> segundos
-</div>
 
-<h5>@Model.participante.NickName : id= @Model.participante.Id puntaje = @Model.participante.Puntaje</h5>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
 
-<h2>@Model.Pregunta.TextoPregunta</h2>
+                    <div class="card-header  border-info">
+                        <h2 class=".titulo-inicio" style="color:#dc3545"><b>Juego</b> </h2>
 
-@using (Html.BeginForm("ValidarRespuesta", "Preguntums", FormMethod.Post))
-{
-    <ul>
-        @for (int i = 0; i < Model.Opciones.Count; i++)
-        {
-            <li>
-                <label>
-                    @Html.RadioButton("respuestaId", Model.Opciones[i].Id) @Model.Opciones[i].TextoRespuesta
-                </label>
-            </li>
-        }
-    </ul>
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
 
-    @Html.Hidden("participanteId", Model.participante.Id)
+                        <div>
+                            Tiempo restante: <span id="tiempoRestante">@Model.TiempoRestante</span> segundos
+                        </div>
 
-    <button type="submit">Responder</button>
-}
+                        <h2 class="titulo-inicio">@Model.Pregunta.TextoPregunta</h2>
 
-<script>
-    var tiempoRestante = @Model.TiempoRestante;
+                        @using (Html.BeginForm("ValidarRespuesta", "Preguntums", FormMethod.Post))
+                        {
+                            <ul>
+                                @for (int i = 0; i < Model.Opciones.Count; i++)
+                                {
+                                    <li>
+                                        <label class="titulo-inicio">
+                                            @Html.RadioButton("respuestaId", Model.Opciones[i].Id) @Model.Opciones[i].TextoRespuesta
+                                        </label>
+                                    </li>
+                                }
+                            </ul>
 
-    var interval = setInterval(function () {
-        tiempoRestante--;
-        document.getElementById("tiempoRestante").innerText = tiempoRestante;
+                            @Html.Hidden("participanteId", Model.participante.Id)
 
-        if (tiempoRestante == 0) {
-            clearInterval(interval);
-            document.getElementById("tiempoRestante").innerText = "Tiempo agotado";
-            terminarPartida();
-        }
-    }, 1000);
+                            <button type="submit" class="boton-registro">Responder</button>
+                        }
 
-    function terminarPartida() {
-        window.location.href = '@Url.Action("TerminarPartida", "Juego")';
-    }
-</script>
+                        <script>
+                            var tiempoRestante = @Model.TiempoRestante;
+
+                            var interval = setInterval(function () {
+                                tiempoRestante--;
+                                document.getElementById("tiempoRestante").innerText = tiempoRestante;
+
+                                if (tiempoRestante == 0) {
+                                    clearInterval(interval);
+                                    document.getElementById("tiempoRestante").innerText = "Tiempo agotado";
+                                    terminarPartida();
+                                }
+                            }, 1000);
+
+                            function terminarPartida() {
+                                window.location.href = '@Url.Action("TerminarPartida", "Juego")';
+                            }
+                        </script>
+
+                    </div>
+
+                </div>
+                <!-- /.card -->
+            </div>
+            <!-- /.col -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+</section>
+

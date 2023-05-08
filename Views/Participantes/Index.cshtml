@@ -4,38 +4,65 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NickName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Puntaje)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NickName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Puntaje)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
+<!-- Main content -->
+<section class="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+
+                    <div class="card-header  border-info">
+                        <h2 class=""><b>Rankig mundial</b> </h2>
+
+                    </div>
+                    <!-- /.card-header -->
+                    <div class="card-body">
+
+                       @* <div class="contenedor-titulo">
+                            <h1 class="titulo-participante">Rankig mundial</h1>
+                        </div>
+*@
+                        <table class="table content-table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.NickName)
+                                    </th>
+                                    <th>
+                                        @Html.DisplayNameFor(model => model.Puntaje)
+                                    </th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    <tr>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.NickName)
+                                        </td>
+                                        <td>
+                                            @Html.DisplayFor(modelItem => item.Puntaje)
+                                        </td>
+
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+
+
+                    </div>
+
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container-fluid -->
+</section>
+
+
+
