@@ -15,5 +15,7 @@ public partial class Participante
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int Id { get; set; }
 
-    public virtual ICollection<Partidum> Partida { get; set; } = new List<Partidum>();
+    public string? PreguntaResuelta { get; set; }
+
+    public virtual ICollection<PreguntaResuelta> PreguntasResueltas { get; set; } = new List<PreguntaResuelta>();
 }

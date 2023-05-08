@@ -10509,19 +10509,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fenix\\.nuget\\packages\\": {}
+    "C:\\Users\\ASUS\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fenix\\Source\\Repos\\ultimate-brain\\UltimateBrain.csproj",
+      "projectUniqueName": "C:\\Users\\ASUS\\source\\repos\\UltimateBrain\\UltimateBrain.csproj",
       "projectName": "UltimateBrain",
-      "projectPath": "C:\\Users\\fenix\\Source\\Repos\\ultimate-brain\\UltimateBrain.csproj",
-      "packagesPath": "C:\\Users\\fenix\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fenix\\Source\\Repos\\ultimate-brain\\obj\\",
+      "projectPath": "C:\\Users\\ASUS\\source\\repos\\UltimateBrain\\UltimateBrain.csproj",
+      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ASUS\\source\\repos\\UltimateBrain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\fenix\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
