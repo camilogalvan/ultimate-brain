@@ -217,7 +217,7 @@ namespace UltimateBrain.Controllers
                 }
                 else
                 {
-                    return View("Ganador");
+                    return View("Ganador", participante);
                 }
             }
             else
@@ -234,6 +234,10 @@ namespace UltimateBrain.Controllers
             }
         }
 
+        public IActionResult FinJuegoTiempo()
+        {
+            return View("FinJuegoTiempo");
+        }
 
         // POST: Preguntums/Delete/5
         [HttpPost, ActionName("Delete")]

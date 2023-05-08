@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<UltimateBrain.Models.Preguntum>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Preguntas";
 }
 
 
@@ -13,14 +13,11 @@
                 <div class="card">
 
                     <div class="card-header  border-info">
-                        <h2 class=""><b>Index</b> </h2>
+                        <h2 class=""><b>Conoce nuestras preguntas</b> </h2>
 
                     </div>
                     <!-- /.card-header -->
                     <div class="card-body">
-                        <p>
-                            <a asp-action="Create">Create New</a>
-                        </p>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -61,20 +58,8 @@
                                         <td>
                                             @Html.DisplayFor(modelItem => item.Tipo)
                                         </td>
-                                        <td>
-                                            <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                                            <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                                            <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                                        </td>
                                     </tr>
                                 }
-                                <tr>
-                                    <td>
-                                        <a asp-action="RegistrarParticipante">Comenzar</a>
-
-                                        <a asp-area="" asp-controller="Participantes" asp-action="Registrar">Comenzar</a>
-                                    </td>
-                                </tr>
                             </tbody>
                         </table>
 

@@ -1,5 +1,4 @@
-﻿@model UltimateBrain.Models.FinJuegoViewModel
-
+﻿
 @{
     ViewData["Title"] = "Fin de Juego";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,10 +12,10 @@
                     <h3 class="card-title">Fin de Juego</h3>
                 </div>
                 <div class="card-body">
-                    <h4 class="text-center">Has perdido la partida</h4>
-                    <p class="text-center">Tu puntaje final: @Model.Puntaje</p>
+                    <h4 class="text-center">Lo sentimos, se acabó el tiempo</h4>
+                    <p class="text-center">¡Averigua tu puntaje final en nuestro ranking!</p>
                     <div class="text-center">
-                        <a href="@Url.Action("Index", "Home")" class="btn btn-primary">Volver al inicio</a>
+                        <a href="@Url.Action("Index", "Participantes")" class="btn btn-primary">Ranking</a>
                     </div>
                 </div>
             </div>
