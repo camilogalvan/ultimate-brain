@@ -14,7 +14,7 @@
 1. [General Description](#general-description)
 2. [Access to](#web-access)
 3. [Explanatory Video](#explanatory-video)
-4. [Technologies](technologies-used-in-the-project)
+4. [Technologies](#technologies-used-in-the-project)
 5. [Local Replication](#how-to-replicate-the-project)
 6. [Detailed Description](#detailed-description)
 7. [About Us](#about-us)
