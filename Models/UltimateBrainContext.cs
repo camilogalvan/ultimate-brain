@@ -17,7 +17,7 @@ public partial class UltimateBrainContext : DbContext
 
     public virtual DbSet<Participante> Participantes { get; set; }
 
-    public virtual DbSet<Partidum> Partida { get; set; }
+    public virtual DbSet<PreguntaResuelta> PreguntaResueltas { get; set; }
 
     public virtual DbSet<Preguntum> Pregunta { get; set; }
 
@@ -42,23 +42,24 @@ public partial class UltimateBrainContext : DbContext
                 .HasMaxLength(50)
                 .IsUnicode(false)
                 .HasColumnName("nickName");
+            entity.Property(e => e.PreguntaResuelta).HasColumnName("Pregunta_resuelta");
+
             entity.Property(e => e.Puntaje).HasColumnName("puntaje");
         });
 
-        modelBuilder.Entity<Partidum>(entity =>
+        modelBuilder.Entity<PreguntaResuelta>(entity =>
         {
-            entity.HasKey(e => e.Id).HasName("PK__partida__3213E83F8D2F70D6");
+            entity.HasKey(e => e.Id).HasName("PK__PreguntaResuelta__3213E83F8D2F70D6");
 
-            entity.ToTable("partida");
+            entity.ToTable("pregunta_resuelta");
 
             entity.Property(e => e.Id)
                 .ValueGeneratedNever()
                 .HasColumnName("id");
             entity.Property(e => e.ParticipanteId).HasColumnName("participanteId");
-            entity.Property(e => e.Puntaje).HasColumnName("puntaje");
-            entity.Property(e => e.Tiempo).HasColumnName("tiempo");
+            entity.Property(e => e.IdPregunta).HasColumnName("id_pregunta");
 
-            entity.HasOne(d => d.Participante).WithMany(p => p.Partida)
+            entity.HasOne(d => d.Participante).WithMany(p => p.PreguntasResueltas)
                 .HasForeignKey(d => d.ParticipanteId)
                 .HasConstraintName("FK__partida__partici__6383C8BA");
         });

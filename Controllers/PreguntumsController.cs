@@ -21,9 +21,9 @@ namespace UltimateBrain.Controllers
         // GET: Preguntums
         public async Task<IActionResult> Index()
         {
-              return _context.Pregunta != null ? 
-                          View(await _context.Pregunta.ToListAsync()) :
-                          Problem("Entity set 'UltimateBrainContext.Pregunta'  is null.");
+            return _context.Pregunta != null ?
+                        View(await _context.Pregunta.ToListAsync()) :
+                        Problem("Entity set 'UltimateBrainContext.Pregunta'  is null.");
         }
 
         // GET: Preguntums/Details/5
@@ -138,10 +138,10 @@ namespace UltimateBrain.Controllers
         public ActionResult MostrarPregunta(int participanteId, int tiempoRestante = 30)
         {
             var participante = _context.Participantes.FirstOrDefault(p => p.Id == participanteId);
-            // Obtener una pregunta aleatoria del contexto de base de datos con sus respuestas
+
             var pregunta = _context.Pregunta.Include(p => p.Respuesta).OrderBy(p => Guid.NewGuid()).FirstOrDefault();
 
-            // Crear un modelo de vista de pregunta y asignar la pregunta, las opciones de respuesta y el tiempo restante
+
             var modelo = new PreguntaViewModel
             {
                 Pregunta = pregunta,
@@ -150,57 +150,93 @@ namespace UltimateBrain.Controllers
                 participante = participante
             };
 
-            // Mostrar la vista de pregunta con el modelo de vista creado
             return View("Pregunta", modelo);
         }
 
         public ActionResult ValidarRespuesta(int respuestaId, int participanteId)
         {
-            
+
             var respuestaSeleccionada = _context.Respuesta.Find(respuestaId);
 
 
             var pregunta = _context.Pregunta.Find(respuestaSeleccionada.PreguntaId);
 
-            
+
             var participante = _context.Participantes.Find(participanteId);
+            string combinedId = participanteId.ToString() + pregunta.Id.ToString();
+            int finalId = int.Parse(combinedId);
 
-            
-            if (respuestaSeleccionada.IsCorrect==true)
+            if (respuestaSeleccionada.IsCorrect == true)
             {
-                
-                participante.Puntaje++;
-
-                
-                _context.SaveChanges();
-
-                // Obtener la siguiente pregunta aleatoria del contexto de base de datos con sus respuestas
-                var siguientePregunta = _context.Pregunta.Include(p => p.Respuesta).OrderBy(p => Guid.NewGuid()).FirstOrDefault();
-
-                // Crear un modelo de vista de pregunta y asignar la pregunta, las opciones de respuesta y el tiempo restante
-                var modelo = new PreguntaViewModel
+                var preguntaResuelta = new PreguntaResuelta
                 {
-                    Pregunta = siguientePregunta,
-                    Opciones = siguientePregunta.Respuesta.Select(r => r).ToList(),
-                    TiempoRestante = 30,
-                    participante = participante
+                    Id = finalId,
+                    IdPregunta = pregunta.Id,
+                    ParticipanteId = participante.Id
                 };
 
-                // Mostrar la vista de pregunta con el modelo de vista creado
-                return View("Pregunta", modelo);
+                _context.PreguntaResueltas.Add(preguntaResuelta);
+                participante.PreguntasResueltas.Add(preguntaResuelta);
+
+                participante.Puntaje++;
+                _context.SaveChanges();
+
+                var preguntasDisponibles = _context.Pregunta.ToList();
+                var siguientePregunta = new Preguntum();
+                bool encontrada = false;
+
+                foreach (var preguntum in preguntasDisponibles)
+                {
+                    combinedId = participanteId.ToString() + preguntum.Id.ToString();
+                    finalId = int.Parse(combinedId);
+
+                    if (!_context.PreguntaResueltas.Any(pr => pr.Id == finalId))
+                    {
+                        siguientePregunta = preguntum;
+                        encontrada = true;
+                        break; 
+                    }
+                }
+
+                if (encontrada)
+                {
+                    var opciones = _context.Respuesta
+                        .Where(r => r.PreguntaId == siguientePregunta.Id)
+                        .Select(r => r)
+                        .ToList();
+
+                    var modelo = new PreguntaViewModel
+                    {
+                        Pregunta = siguientePregunta,
+                        Opciones = opciones,
+                        TiempoRestante = 30,
+                        participante = participante
+                    };
+
+                    return View("Pregunta", modelo);
+                }
+                else
+                {
+                    return View("Ganador", participante);
+                }
             }
             else
             {
-                // El participante ha perdido el juego, mostrar un mensaje de fin de juego
+                participante.PreguntasResueltas.Clear();
+                _context.SaveChanges();
                 var modelo = new FinJuegoViewModel
                 {
                     Puntaje = participante.Puntaje,
                     ParticipanteId = participanteId
                 };
 
-                // Mostrar la vista de fin de juego con el modelo de vista creado
                 return View("FinJuego", modelo);
             }
+        }
+
+        public IActionResult FinJuegoTiempo()
+        {
+            return View("FinJuegoTiempo");
         }
 
         // POST: Preguntums/Delete/5
@@ -217,14 +253,14 @@ namespace UltimateBrain.Controllers
             {
                 _context.Pregunta.Remove(preguntum);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
         private bool PreguntumExists(int id)
         {
-          return (_context.Pregunta?.Any(e => e.Id == id)).GetValueOrDefault();
+            return (_context.Pregunta?.Any(e => e.Id == id)).GetValueOrDefault();
         }
     }
 

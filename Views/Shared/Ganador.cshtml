@@ -1,0 +1,27 @@
+﻿@model Participante
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>¡Felicitaciones!</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-5">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title titulo-inicio text-center">¡Felicitaciones @Model.NickName!</h3>
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-text titulo-inicio" style="color:#dc3545">¡Eres un ganador!</h4>
+                        <p class="card-text titulo-inicio">Tu puntaje es: @Model.Puntaje</p>
+                        <a href="@Url.Action("Index", "Home")" class="btn btn-danger">Volver al inicio</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

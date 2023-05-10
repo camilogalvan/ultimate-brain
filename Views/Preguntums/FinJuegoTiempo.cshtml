@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "Fin de Juego";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header text-center">
+                    <h3 class="card-title titulo-inicio">Fin de Juego</h3>
+                </div>
+                <div class="card-body">
+                    <h4 class="text-center" style="color:#dc3545">Lo sentimos, se acabó el tiempo</h4>
+                    <p class="text-center">¡Averigua tu puntaje final en nuestro ranking!</p>
+                    <div class="text-center">
+                        <a href="@Url.Action("Index", "Participantes")" class="btn btn-danger">Ranking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
