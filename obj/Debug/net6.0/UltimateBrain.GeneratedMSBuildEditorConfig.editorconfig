@@ -9,85 +9,77 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = UltimateBrain
 build_property.RootNamespace = UltimateBrain
-build_property.ProjectDir = C:\Users\fenix\source\repos\ultimate-brain\
+build_property.ProjectDir = C:\Users\Jarlin\source\repos\ultimate-brain\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\fenix\source\repos\ultimate-brain
+build_property.MSBuildProjectDirectory = C:\Users\Jarlin\source\repos\ultimate-brain
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Home/Index.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Participantes/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRlc1xDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Participantes/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRlc1xEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Participantes/Details.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRlc1xEZXRhaWxzLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Participantes/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRlc1xFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Participantes/Index.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Participantes/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Participantes/RegistrarParticipante.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Participantes/RegistrarParticipante.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFydGljaXBhbnRlc1xSZWdpc3RyYXJQYXJ0aWNpcGFudGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Preguntums/Create.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Preguntums/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZ3VudHVtc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Preguntums/Delete.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Preguntums/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZ3VudHVtc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Preguntums/Details.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Preguntums/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZ3VudHVtc1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Preguntums/Edit.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Preguntums/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZ3VudHVtc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Preguntums/Index.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Preguntums/FinJuegoTiempo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZ3VudHVtc1xGaW5KdWVnb1RpZW1wby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Preguntums/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZ3VudHVtc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Preguntums/Pregunta.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Preguntums/Pregunta.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJlZ3VudHVtc1xQcmVndW50YS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Shared/Error.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Shared/FinJuego.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEZpbkp1ZWdvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Shared/Ganador.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEdhbmFkb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/_ViewImports.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/_ViewStart.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/fenix/source/repos/ultimate-brain/Views/Shared/_Layout.cshtml]
+[C:/Users/Jarlin/source/repos/ultimate-brain/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-83y9hehs1l
