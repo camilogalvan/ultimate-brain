@@ -135,8 +135,10 @@ namespace UltimateBrain.Controllers
             return View(preguntum);
         }
 
-        public ActionResult MostrarPregunta(int participanteId, int tiempoRestante = 30)
+        public ActionResult MostrarPregunta(int participanteId)
         {
+            int tiempoRestante = 30;
+
             var participante = _context.Participantes.FirstOrDefault(p => p.Id == participanteId);
 
             var pregunta = _context.Pregunta.Include(p => p.Respuesta).OrderBy(p => Guid.NewGuid()).FirstOrDefault();
