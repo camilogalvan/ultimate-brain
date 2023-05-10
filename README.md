@@ -110,6 +110,23 @@ HTML, CSS and Javascript are three languages that are used in the Front End, tha
    </p>
    
    Oficial Documentation: https://www.w3schools.com/
+   
+   <p align="justify">
+  
+<h4 align="center">AZURE APP SERVICE and AZURE SQL DATABASE </h3>
+   
+   Ultimate Brain was deployed in the cloud using Azure, so the Azure Infrastructure view is a visualization tool that allows users to see and understand the architecture of their resources in the Microsoft Azure cloud. This view provides a visual representation of the network topology of your resources, including the connections between them, and allows users to see the geographic distribution of your resources. 
+      The Ultimate Brain infrastructure view is composed of two main Azure services which are:
+   </p>
+     
+- Azure App Service: An HTTP-based service for hosting web applications, REST APIs and back-ends for mobile devices.
+   
+- Azure SQL Database: is an intelligent, fully managed relational database service built for the cloud. With SQL Database, you can create a high-performance, highly available data storage layer for modern cloud applications.
+<p align="center">
+   <img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/32ae1a89-1581-449b-83ac-111fe8afe60f" alt="Vista de Infraestructura Ultimate Brain" title="Vista de Infraestructura Ultimate Brain"/> 
+   </p>
+   
+   
 ## How to replicate the project?
 
 First, it is necessary to download Visual Studio 2022, which you can find here : https://visualstudio.microsoft.com/es/vs/.
