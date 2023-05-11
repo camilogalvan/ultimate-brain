@@ -35,7 +35,10 @@ The game was designed with the purpose of providing an entertaining and instruct
 ## Web Access
 You can access the game at the following link : 🧠🎮 https://ultimate-brainprod.azurewebsites.net/ 🧠🎮
 ## Explanatory Video
-Link to acces: 
+- Link to acces: https://www.youtube.com/watch?v=c5tcadDpLXE&ab_channel=JarlinAndresFonsecaBermon
+
+- Code analysis tools in the project: https://www.youtube.com/watch?v=C79Mu1nqCI4&ab_channel=JarlinAndresFonsecaBermon
+
 
 ## Technologies Used in the Project
 
