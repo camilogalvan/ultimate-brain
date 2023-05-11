@@ -150,6 +150,7 @@ The access to our project: https://github.com/camilogalvan/ultimate-brain
    <p align="center">
 <img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/c2525b3c-d2f8-49b0-bd86-23e4258f52f4" height="500"  />
  <img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/f059fa47-a0ab-489d-bf98-8d55a4bfd90b" height="500"  />
+<img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/a9bfdffd-899c-47f0-a8a3-79cd989a8253" height="500"  />
 </p>
 <!--![image](https://github.com/camilogalvan/ultimate-brain/assets/80492180/c2525b3c-d2f8-49b0-bd86-23e4258f52f4)
 ![image](https://github.com/camilogalvan/ultimate-brain/assets/80492180/f059fa47-a0ab-489d-bf98-8d55a4bfd90b)-->
@@ -166,23 +167,33 @@ Now you can work on the project, make the modifications you create and run it lo
  <p align="left">
    <img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/85e8cc63-3bf9-4f4c-b55c-f65e7de8c95b"  height="500"/>
 </p>
+
 - The player selects the "Start Game" option to begin the game.
 <p align="left">
    <img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/81520e6c-99ee-4f81-9345-ce98873e1d84"  Width="400"/>
 </p>
+
 - The system displays a question on the screen along with the answer options.
 <p align="left">
    <img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/c1ff80ce-6ff2-4786-882a-49ec39ed9394"  Width="400"/>
 </p>
+
 - The player reads the question and selects the option he/she considers correct.
+
 - The system checks if the selected answer is correct.
+
 - If the answer is incorrect, the system displays an error message and ends the game.
+
 <p align="left">
    <img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/a4f82ea2-e8ac-4ffb-a3be-01176a41075a"  Width="400"/>
 </p>
+
 - If the answer is correct, the system displays a success message and updates the player's accumulated amount.
+
 - The system loads the next question and repeats steps 4-7 until the questions are exhausted or the player decides to end the game.
+
 - At the end of the game, the system displays the player's final score and allows the player to save his record if it is high enough.
+
 <p align="left">
    <img src="https://github.com/camilogalvan/ultimate-brain/assets/80492180/7bc369b2-03fb-4fdc-93d9-99ddc539b975"  Width="500"/>
 </p>
